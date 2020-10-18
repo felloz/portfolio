@@ -6,283 +6,299 @@
 
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-<title>Luis Serrano - Portfolio</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162790014-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<title>Luis Serrano - Portfolio</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162790014-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'UA-162790014-1');
-</script>
+		gtag('config', 'UA-162790014-1');
+	</script>
 
-<link rel="icon" type="image/png" href="images/code.png">
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
- <!-- Custom Theme files -->
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="keywords" content=""/>
-<!-- webfonts -->
+	<link rel="icon" type="image/png" href="images/code.png">
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- webfonts -->
 	<link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-<!-- webfonts -->
- <!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+	<!-- webfonts -->
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000); 
-				});
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
 			});
+		});
 
-			jQuery(document).ready(function () {
-					jQuery('.skillbar').each(function () {
-						jQuery(this).find('.skillbar-bar').animate({
-							width: jQuery(this).attr('data-percent')
-						}, 6000);
-					});
-				});
-		</script> 
- <!---- start-smoth-scrolling---->
+		jQuery(document).ready(function () {
+			jQuery('.skillbar').each(function () {
+				jQuery(this).find('.skillbar-bar').animate({
+					width: jQuery(this).attr('data-percent')
+				}, 6000);
+			});
+		});
+	</script>
+	<!---- start-smoth-scrolling---->
 </head>
-	<body>
-		<!-- container -->
-			<!-- header -->
-			<div id="home" class="header">
-				<div class="container">
-				<!-- top-hedader -->
-				<div class="top-header">
-					<!-- /logo -->
-					<!--top-nav---->
-					<div class="top-nav">
+
+<body>
+	<!-- container -->
+	<!-- header -->
+	<div id="home" class="header">
+		<div class="container">
+			<!-- top-hedader -->
+			<div class="top-header">
+				<!-- /logo -->
+				<!--top-nav---->
+				<div class="top-nav">
 					<div class="navigation">
-					<div class="logo">
-						<h1><a href="index.html"><span>P</span>REFACE</a></h1>
-					</div>
-					<div class="navigation-right">
-						<span class="menu"><img src="images/menu.png" alt=" " /></span>
-						<nav class="link-effect-3" id="link-effect-3">
-							<ul class="nav1 nav nav-wil">
-								<li class="active"><a data-hover="Home" href="index.html">Home</a></li>
-								<li><a class="scroll" data-hover="About" href="#about">About</a></li>
-								<li><a class="scroll" data-hover="Services" href="#services" >Services</a></li>
-								<li><a class="scroll" data-hover="Experience" href="#work">Experience</a></li>
-								<li><a class="scroll" data-hover="Portfolio" href="#port">Portfolio</a></li>
-								<li><a class="scroll" data-hover="Blog" href="#blogs">Blog</a></li>
-								<li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
-							</ul>
-						</nav>
+						<div class="logo">
+							<h1><a href="index.html"><span>P</span>{{message}}</a></h1>
+						</div>
+						<div class="navigation-right">
+							<span class="menu"><img src="images/menu.png" alt=" " /></span>
+							<nav class="link-effect-3" id="link-effect-3">
+								<ul class="nav1 nav nav-wil">
+									<li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+									<li><a class="scroll" data-hover="About" href="#about">About</a></li>
+									<li><a class="scroll" data-hover="Services" href="#services">Services</a></li>
+									<li><a class="scroll" data-hover="Experience" href="#work">Experience</a></li>
+									<li><a class="scroll" data-hover="Portfolio" href="#port">Portfolio</a></li>
+									<li><a class="scroll" data-hover="Blog" href="#blogs">Blog</a></li>
+									<li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
+								</ul>
+							</nav>
 							<!-- script-for-menu -->
-								<script>
-								   $( "span.menu" ).click(function() {
-									 $( "ul.nav1" ).slideToggle( 300, function() {
-									 // Animation complete.
-									  });
-									 });
-								</script>
+							<script>
+								$("span.menu").click(function () {
+									$("ul.nav1").slideToggle(300, function () {
+										// Animation complete.
+									});
+								});
+							</script>
 							<!-- /script-for-menu -->
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="clearfix"></div>
+					<!-- /top-hedader -->
 				</div>
-				<!-- /top-hedader -->
+				<div class="banner-info">
+					<div class="col-md-7 header-right">
+						<h1>Hi !</h1>
+						<h6>Dev & Server Admin</h6>
+						<ul class="address">
+
+							<li>
+								<ul class="address-text">
+									<li><strong>NAME</strong></li>
+									<li>I'M Luis Serrano</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><strong>D.O.B</strong></li>
+									<li>01-21-1982</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><strong>PHONE </strong></li>
+									<li>+58 412 978 8331</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><strong>ADDRESS </strong></li>
+									<li>1020 Caracas,Capital District.</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><strong>E-MAIL </strong></li>
+									<li><a href="mailto:serranol82@gmail.com"> serranol82@gmail.com</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><strong>Linkedin </strong></li>
+									<li><a
+											href="https://www.linkedin.com/in/luis-serrano-a1ba67112/">www.luis-serrano.com</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><strong>My Resume </strong></li>
+									<li><a href="https://www.linkedin.com/in/luis-serrano-a1ba67112/">Download!</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-md-5 header-left">
+						<img src="images/img1.jpg" alt="">
+					</div>
+					<div class="clearfix"> </div>
+
 				</div>
-			<div class="banner-info">
-				<div class="col-md-7 header-right">
-					<h1>Hi !</h1>
-					<h6>Dev & Server Admin</h6>
-					<ul class="address">
-					
-					<li>
-							<ul class="address-text">
-								<li><strong>NAME</strong></li>
-								<li>I'M Luis Serrano</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><strong>D.O.B</strong></li>
-								<li>01-21-1982</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><strong>PHONE </strong></li>
-								<li>+58 412 978 8331</li>
-							</ul>
-						</li>
-						<li> 
-							<ul class="address-text">
-								<li><strong>ADDRESS </strong></li>
-								<li>1020 Caracas,Capital District.</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><strong>E-MAIL </strong></li>
-								<li><a href="mailto:serranol82@gmail.com"> serranol82@gmail.com</a></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><strong>Linkedin </strong></li>
-								<li><a href="https://www.linkedin.com/in/luis-serrano-a1ba67112/">www.luis-serrano.com</a></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><strong>My Resume </strong></li>
-								<li><a href="https://www.linkedin.com/in/luis-serrano-a1ba67112/">Download!</a></li>
-							</ul>
-						</li>
-						
-					</ul>
-				</div>
-				<div class="col-md-5 header-left">
-					<img src="images/img1.jpg" alt="">
-				</div>
-				<div class="clearfix"> </div>
-						
-		      </div>
 			</div>
 		</div>
 	</div>
-			<!-- about -->
-			<div id="about" class="about">
-				<div class="col-md-6 about-left">
-					<div id="owl-demo1" class="owl-carousel owl-carousel2">
-					                <div class="item">
-					                	<div class="about-left-grid">
-											<h2>Hi! I'm <span>Luis Serrano</span></h2>
-											<p>Engineer with more than 18 years of experience, my remarkable academic training: Centra University of Venezuela CCNA Cisco System, Computer Scince Bachelor ISUM, Engineer In telecommunications UNEFA (To be completed), UPEL Diplomat in University Teaching.
+	<!-- about -->
+	<div id="about" class="about">
+		<div class="col-md-6 about-left">
+			<div id="owl-demo1" class="owl-carousel owl-carousel2">
+				<div class="item">
+					<div class="about-left-grid">
+						<h2>Hi! I'm <span>Luis Serrano</span></h2>
+						<p>Engineer with more than 18 years of experience, my remarkable academic training: Centra
+							University of Venezuela CCNA Cisco System, Computer Scince Bachelor ISUM, Engineer In
+							telecommunications UNEFA (To be completed), UPEL Diplomat in University Teaching.
 
-												Work experience: Mundo Ole, Sun Channel Tourism Television, Pedagogical Institute of Caracas, Expo Marketing, Technology Media.
-												
-												At this time I am working as a systems specialist for the renowned company in Venezuela and currently recognized by venamcham as the best financial institution in the country, Mercantil Bank</p>
-											<ul>
-												<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
-												<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
-											</ul>
-										</div>
-					                </div>
-					                  <div class="item">
-					                	<div class="about-left-grid">
-											<h2>My <span>Work Plan</span></h2>
-											<p>Focused on solutions applying computer knowledge in the area of projects for the development of systems, installation, configuration of networks and servers through international quality standards that allow the company to be guided in a direction of expansion and progress, through perseverance , the learning and acquired experience and continuous preparation for the new technological tools that are born every day.
+							Work experience: Mundo Ole, Sun Channel Tourism Television, Pedagogical Institute of
+							Caracas, Expo Marketing, Technology Media.
 
-												Currently, working on Agile Development Methodology Squads under the SCRUM framework. I have participated in several projects under this methodology, including at moment the banking transformation to multicurrency.</p>
-											<ul>
-												<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
-												<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
-											</ul>
-										</div>
-					                </div>
-					                  <div class="item">
-					                	<div class="about-left-grid">
-											<h2>My <span>Skills</span></h2>
-											<p>
-												<div class="skillbar clearfix " data-percent="95%">
-													<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
-													<div class="skillbar-bar" style="background: #5a68a5;"></div>
-													<div class="skill-bar-percent">95%</div>
-												</div> <!-- End Skill Bar -->
-
-												<div class="skillbar clearfix " data-percent="70%">
-													<div class="skillbar-title" style="background: #46465e;"><span>Perl</span></div>
-													<div class="skillbar-bar" style="background: #5a68a5;"></div>
-													<div class="skill-bar-percent">70%</div>
-												</div> <!-- End Skill Bar -->
-
-												<div class="skillbar clearfix " data-percent="70%">
-													<div class="skillbar-title" style="background: rgb(68, 10, 10);"><span>Java</span></div>
-													<div class="skillbar-bar" style="background: #CB3132;"></div>
-													<div class="skill-bar-percent">70%</div>
-												</div> <!-- End Skill Bar -->
-
-												<div class="skillbar clearfix " data-percent="70%">
-													<div class="skillbar-title" style="background: rgb(105, 93, 15);"><span>JavaScript</span></div>
-													<div class="skillbar-bar" style="background: #D9BB05;"></div>
-													<div class="skill-bar-percent">70%</div>
-												</div> <!-- End Skill Bar -->
-
-												<div class="skillbar clearfix " data-percent="70%">
-													<div class="skillbar-title" style="background: #41B883;"><span>Vue</span></div>
-													<div class="skillbar-bar" style="background: #41B883;"></div>
-													<div class="skill-bar-percent">70%</div>
-												</div> <!-- End Skill Bar -->
-
-												<div class="skillbar clearfix " data-percent="90%">
-													<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-													<div class="skillbar-bar" style="background: #e67e22;"></div>
-													<div class="skill-bar-percent">90%</div>
-												</div> <!-- End Skill Bar -->
-												
-												<div class="skillbar clearfix " data-percent="70%">
-													<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
-													<div class="skillbar-bar" style="background: #3498db;"></div>
-													<div class="skill-bar-percent">70%</div>
-												</div> <!-- End Skill Bar -->
-												
-																								
-											</p>
-											<ul>
-												<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
-												<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
-											</ul>
-										</div>
-					                </div>
+							At this time I am working as a systems specialist for the renowned company in Venezuela and
+							currently recognized by venamcham as the best financial institution in the country,
+							Mercantil Bank</p>
+						<ul>
+							<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+							<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-md-6 about-right">
-					
+				<div class="item">
+					<div class="about-left-grid">
+						<h2>My <span>Work Plan</span></h2>
+						<p>Focused on solutions applying computer knowledge in the area of projects for the development
+							of systems, installation, configuration of networks and servers through international
+							quality standards that allow the company to be guided in a direction of expansion and
+							progress, through perseverance , the learning and acquired experience and continuous
+							preparation for the new technological tools that are born every day.
+
+							Currently, working on Agile Development Methodology Squads under the SCRUM framework. I have
+							participated in several projects under this methodology, including at moment the banking
+							transformation to multicurrency.</p>
+						<ul>
+							<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+							<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="clearfix"> </div>
-							<link href="css/owl.carousel.css" rel="stylesheet">
-							    <script src="js/owl.carousel.js"></script>
-			<script>
-				$(document).ready(function() {
-					$("#owl-demo1").owlCarousel({
-						items : 1,
-						lazyLoad : false,
-						autoPlay : true,
-						navigation : false,
-						navigationText :  false,
-						pagination : true,
-					});
-				});
-			</script>
-			<!-- Feedback -->
-			<script>
-				$(document).ready(function() {
-					$("#owl-demo3").owlCarousel({
-						items : 1,
-						lazyLoad : false,
-						autoPlay : true,
-						navigation : false,
-						navigationText :  true,
-						pagination :true,
-					});
-				});
-			</script>
+				<div class="item">
+					<div class="about-left-grid">
+						<h2>My <span>Skills</span></h2>
+						<p>
+						<div class="skillbar clearfix " data-percent="95%">
+							<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+							<div class="skillbar-bar" style="background: #5a68a5;"></div>
+							<div class="skill-bar-percent">95%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar-title" style="background: #46465e;"><span>Perl</span></div>
+							<div class="skillbar-bar" style="background: #5a68a5;"></div>
+							<div class="skill-bar-percent">70%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar-title" style="background: #417FB1;"><span>Python</span></div>
+							<div class="skillbar-bar" style="background: #FFDE56;"></div>
+							<div class="skill-bar-percent">70%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar-title" style="background: rgb(105, 93, 15);"><span>JavaScript</span>
+							</div>
+							<div class="skillbar-bar" style="background: #D9BB05;"></div>
+							<div class="skill-bar-percent">70%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar-title" style="background: #41B883;"><span>Vue</span></div>
+							<div class="skillbar-bar" style="background: #41B883;"></div>
+							<div class="skill-bar-percent">70%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="90%">
+							<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+							<div class="skillbar-bar" style="background: #e67e22;"></div>
+							<div class="skill-bar-percent">90%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+							<div class="skillbar-bar" style="background: #3498db;"></div>
+							<div class="skill-bar-percent">70%</div>
+						</div> <!-- End Skill Bar -->
+
+
+						</p>
+						<ul>
+							<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+							<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<!-- /about -->
-			<!-- services -->
-			<div id="services" class="services">
-				<div class="container">
-					<div class="service-head one text-center ">
-						<h4>WHAT I DO</h4>
-						<h3>MY <span>SERVICES</span></h3>
-						<span class="border two"></span>
-					</div>
-					<!-- services-grids -->
-					<div class="wthree_about_right_grids w3l-agile">
+		</div>
+		<div class="col-md-6 about-right">
+
+		</div>
+		<div class="clearfix"> </div>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo1").owlCarousel({
+					items: 1,
+					lazyLoad: false,
+					autoPlay: true,
+					navigation: false,
+					navigationText: false,
+					pagination: true,
+				});
+			});
+		</script>
+		<!-- Feedback -->
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo3").owlCarousel({
+					items: 1,
+					lazyLoad: false,
+					autoPlay: true,
+					navigation: false,
+					navigationText: true,
+					pagination: true,
+				});
+			});
+		</script>
+	</div>
+	<!-- /about -->
+	<!-- services -->
+	<div id="services" class="services">
+		<div class="container">
+			<div class="service-head one text-center ">
+				<h4>WHAT I DO</h4>
+				<h3>MY <span>SERVICES</span></h3>
+				<span class="border two"></span>
+			</div>
+			<!-- services-grids -->
+			<div class="wthree_about_right_grids w3l-agile">
 				<div class="col-md-6 wthree_about_right_grid">
 					<div class="col-xs-4 wthree_about_right_grid_left">
 						<div class="hvr-rectangle-in">
@@ -294,7 +310,9 @@
 					</div>
 					<div class="col-xs-8 wthree_about_right_grid_right">
 						<h4>Web Development</h4>
-						<p>Development of web applications for all areas. Focused on agile frameworks for their development. Using current technologies that allow users to achieve the best experience in the use of software.</p>
+						<p>Development of web applications for all areas. Focused on agile frameworks for their
+							development. Using current technologies that allow users to achieve the best experience in
+							the use of software.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -306,7 +324,9 @@
 					</div>
 					<div class="col-xs-8 wthree_about_right_grid_right">
 						<h4>Server Admin</h4>
-						<p>Infrastructure is a neuralgic domain in the ecosystem of a system, therefore server administration and security go hand in hand with the user experience. Solid knowledge on GNU / Linux Servers: CentOS, Ubuntu.</p>
+						<p>Infrastructure is a neuralgic domain in the ecosystem of a system, therefore server
+							administration and security go hand in hand with the user experience. Solid knowledge on GNU
+							/ Linux Servers: CentOS, Ubuntu.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -318,7 +338,9 @@
 					</div>
 					<div class="col-xs-8 wthree_about_right_grid_right">
 						<h4>Script Design</h4>
-						<p>Specialist in the construction of Script for different needs in the ecosystem of systems, both for scheduled tasks and for different needs that may exist when automating processes. For this I use languages like Bash, Perl, PHP</p>
+						<p>Specialist in the construction of Script for different needs in the ecosystem of systems,
+							both for scheduled tasks and for different needs that may exist when automating processes.
+							For this I use languages like Bash, Perl, PHP</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -330,135 +352,148 @@
 					</div>
 					<div class="col-xs-8 wthree_about_right_grid_right">
 						<h4>Email Marketing Master</h4>
-						<p>As manager of an email marketing platform I have a lot of experience on the core of business as well as knowledge in script development and service configuration.</p>
+						<p>As manager of an email marketing platform I have a lot of experience on the core of business
+							as well as knowledge in script development and service configuration.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 
-					<!-- services-grids -->
-				</div>
-			</div>
-			<!-- services -->
-			
-			<!--work-experience-->
+			<!-- services-grids -->
+		</div>
+	</div>
+	<!-- services -->
+
+	<!--work-experience-->
 	<div id="work" class="work">
 		<div class="container">
 			<div class="service-head text-center">
-						<h4>WHAT I DID</h4>
-						<h3>MY <span>EXPERIENCE</span></h3>
-						<span class="border one"></span>
-					</div>
-					<div class="time-main w3l-agile">
-							<div class="col-md-6 year-info">
-							   <ul class="year">
-								   <li>2007</li>
-								   <li>2008</li>
-								   <li>2011</li>
-								   <li>2017</li>
-								   <li>2019</li>
-								   <div class="clearfix"></div>
-								</ul>
-							</div> 
-					                        <ul class="col-md-6 timeline">
-																<li>
-																  <div class="timeline-badge pas"><i class="glyphicon glyphicon-briefcase"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Mundo Ole</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>Great experience in the television area working for the engineering department transmitting channels such as History Channel, Biography Channel and A&E </p>
-																	</div>
-																  </div>
-																</li>
-																
-																<li>
-																  <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Sun Chanel Tourism Television</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>One of my universities in the area of telecommunications, as an engineering assistant we work with different types of servers for Sun Channel television transmission. </p>
-																	</div>
-																  </div>
-																</li>
-																
-																
-																
-																<li>
-																  <div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Instituto Pedagógico de Caracas</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>As the head of networks or head of the data center of this sacred study house, I performed my duties with the greatest determination and commitment. </p>
-																	</div>
-																  </div>
-																</li>
-																
-																<li>
-																  <div class="timeline-badge danger"><i class="glyphicon glyphicon-briefcase"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Expomarketing Technology Media</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>Technology Manager of a company dedicated to the development of applications and mass mailing through its RadarSystems.net platform. Leader in the market for mailing in Venezuela. I started out as a developer in PHP and Perl and later promoted to the position of CTO. </p>
-																	</div>
-																  </div>
-																</li>
-																<li>
-																  <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Mercantil Bank</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>My university in terms of information management at a bank security level, professional learning of the use of Agile software development methodologies such as Scrum. Construction of systems thinking about the best experience that the client can have through methodologies such as Design Thinking. </p>
-																	</div>
-																  </div>
-																</li>
-															</ul>
-								<div class="clearfix"></div>
-								</div>
-						</div>
+				<h4>WHAT I DID</h4>
+				<h3>MY <span>EXPERIENCE</span></h3>
+				<span class="border one"></span>
+			</div>
+			<div class="time-main w3l-agile">
+				<div class="col-md-6 year-info">
+					<ul class="year">
+						<li>2007</li>
+						<li>2008</li>
+						<li>2011</li>
+						<li>2017</li>
+						<li>2019</li>
+						<div class="clearfix"></div>
+					</ul>
 				</div>
+				<ul class="col-md-6 timeline">
+					<li>
+						<div class="timeline-badge pas"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">Mundo Ole</h4>
+							</div>
+							<div class="timeline-body">
+								<p>Great experience in the television area working for the engineering department
+									transmitting channels such as History Channel, Biography Channel and A&E </p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">Sun Chanel Tourism Television</h4>
+							</div>
+							<div class="timeline-body">
+								<p>One of my universities in the area of telecommunications, as an engineering assistant
+									we work with different types of servers for Sun Channel television transmission.
+								</p>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li>
+						<div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">Instituto Pedagógico de Caracas</h4>
+							</div>
+							<div class="timeline-body">
+								<p>As the head of networks or head of the data center of this sacred study house, I
+									performed my duties with the greatest determination and commitment. </p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="timeline-badge danger"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">Freelance Development</h4>
+							</div>
+							<div class="timeline-body">
+								<p>In my spare time I dedicate myself to developing web applications or scripting for
+									different companies that require my services, currently I can offer programming in
+									the languages: Python, PHP, JavaScript, Perl, C ++, SQL.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">Mercantil Bank</h4>
+							</div>
+							<div class="timeline-body">
+								<p>My university in terms of information management at a bank security level,
+									professional learning of the use of Agile software development methodologies such as
+									Scrum. Construction of systems thinking about the best experience that the client
+									can have through methodologies such as Design Thinking. </p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
 	<!--//work-experience-->
 
-		<!-- portfolio -->
-<div class="portfolio" id="port">
-				<div class="service-head text-center">
-						<h4>MY WORKS</h4>
-						<h3>MY <span>PORTFOLIO</span></h3>
-						<span class="border"></span>
-					</div>
-			<div class="portfolio-grids">
-				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-				<script type="text/javascript">
-									$(document).ready(function () {
-										$('#horizontalTab').easyResponsiveTabs({
-											type: 'default', //Types: default, vertical, accordion           
-											width: 'auto', //auto or any width like 600px
-											fit: true   // 100% fit in a container
-										});
-									});
-									
-				</script>
-				<div class="sap_tabs">
-					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-						<ul class="resp-tabs-list">
-							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>ALL</span></li> 
-							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>WEB DEVELOPMENT</span></li> 
-							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>SERVER ADMIN</span></li> 				
-							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>USE CASES</span></li> 
-						</ul>				  	 
-						<div class="resp-tabs-container">
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-								<!---<div class="col-md-3 team-gd ">
+	<!-- portfolio -->
+	<div class="portfolio" id="port">
+		<div class="service-head text-center">
+			<h4>MY WORKS</h4>
+			<h3>MY <span>PORTFOLIO</span></h3>
+			<span class="border"></span>
+		</div>
+		<div class="portfolio-grids">
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});
+
+			</script>
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>ALL</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>WEB DEVELOPMENT</span>
+						</li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>SERVER ADMIN</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>SCRUM</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>RECENT PROJECTS</span>
+						</li>
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+							<!---<div class="col-md-3 team-gd ">
 									
 										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic4.jpg" alt="">
 										
@@ -472,311 +507,363 @@
 										</a>
 									
 								</div>-->
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/email1.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd ">
-								
-										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/servers.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
-										
-										</a>
-								
-								</div>
-								<!--<div class="col-md-3 team-gd yes_marg ">
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/email1.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/servers.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+								<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+								<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+								<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+								</a>
+
+							</div>
+							<!--<div class="col-md-3 team-gd yes_marg ">
 									
 										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic14.jpg" alt="">
 										
 										</a>
 									
 								</div>-->
-								<div class="clearfix"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go"
+										data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+								</div>
 							</div>
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										
-										</a>
-									</div>
+							<div class="col-md-3 team-gd  ">
+								<div class="thumb">
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go"
+										data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
 								</div>
-								<div class="col-md-3 team-gd  ">
-									<div class="thumb">
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-										
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
 							</div>
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/email1.jpg" alt="">
-										
-										</a>
-								
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/servers.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd">
-									
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd">
-									
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-									
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+								</a>
+
 							</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd">
-									
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/email1.jpg" alt="">
+
+								</a>
+
 							</div>
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/servers.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="col-md-3 team-gd">
+
+								<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="col-md-3 team-gd">
+
+								<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
+							<div class="col-md-3 team-gd ">
+
+								<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go"
+									data-toggle="modal"><img src="images/mercan.jpg" alt="">
+
+								</a>
+
+							</div>
+							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 	<!-- //portfolio -->
-    <!-- top-grids -->
-				<div class="blog" id="blogs">
-					<div class="container">
-						<div class="service-head text-center">
-						<h4>BLOGS</h4>
-						<h3>MY <span>BLOGS</span></h3>
-						<span class="border one"></span>
-					</div>
-					   <div class="news-grid w3l-agile">
-					    <div class="col-md-6 news-img">
-						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b1.jpg" alt=" " class="img-responsive"></a>
-						 
-						</div>
-					    <div class="col-md-6 news-text">
-						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">MERCANTIL IN 95 YEARS</a></h3>
-							<ul class="news">
-								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
-								<!--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
-								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
-								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
-							</ul>
-							<p>Mercantil Bank in its 95 is well on its way to completing the century being the best bank in Venezuela and one of the best in Latin America and the world. Right now Mercantil Bank leveraged...</p>
-							<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
-					
-						</div>
-		
-						<div class="clearfix"></div>
-					 </div>
-					  <div class="news-grid">
+	<!-- top-grids -->
+	<div class="blog" id="blogs">
+		<div class="container">
+			<div class="service-head text-center">
+				<h4>BLOGS</h4>
+				<h3>MY <span>BLOGS</span></h3>
+				<span class="border one"></span>
+			</div>
+			<div class="news-grid w3l-agile">
+				<div class="col-md-6 news-img">
+					<a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b1.jpg" alt=" "
+							class="img-responsive"></a>
 
-					    <div class="col-md-6 news-text two">
-						   <h3> <a href="#" data-toggle="modal" data-target="#myModal2">HONEYPOT: VUEJS</a></h3>
-							<ul class="news">
-								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
-								<!--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
-								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
-								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
-							</ul>
-							<p>Honeypot a YouTube channel has completely caught my attention, and is that his documentaries are focused mainly on the world of Software development. And what most impressed me is the quality of them, being at the level of any National Geographic documentary :-)
-							</p>
-								<a href="#" data-toggle="modal" data-target="#myModal2" class="read hvr-shutter-in-horizontal">Read More</a>
-					
-						</div>
-						<div class="col-md-6 news-img two">
-						   <a href="#" data-toggle="modal" data-target="#myModal2"> <img src="images/b2.jpg" alt=" " class="img-responsive"></a>
-						 
-						</div>
-						<div class="clearfix"></div>
-					 </div>
-					  <div class="news-grid">
-					    <div class="col-md-6 news-img">
-						  <a href="#" data-toggle="modal" data-target="#myModal3"> <img src="images/b3.jpg" alt=" " class="img-responsive"></a>
-						 
-						</div>
-					    <div class="col-md-6 news-text">
-						   <h3> <a href="#" data-toggle="modal" data-target="#myModal3">LARACON EU: 2019</a></h3>
-							<ul class="news">
-								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
-								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
-								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
-								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
-							</ul>
-							<p>Laracon is the international official conference on Laravel. It is a place where developers and Laravel enthusiasts come around to discuss and learn more about Laravel. It mainly deals with topics like Laravel framework, development, its uses and other software development news. It is not just limited to Laravel. It is a conference for discussing general software development. .</p>
-							<a href="#" data-toggle="modal" data-target="#myModal3" class="read hvr-shutter-in-horizontal">Read More</a>
-					
-						</div>
-		
-						<div class="clearfix"></div>
-					 </div>
-					</div>
 				</div>
-				<!-- top-grids -->
-	<!-- /blog-pop-->
-			<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog about" role="document">
-					<div class="modal-content about">
-						<div class="modal-header">
-							<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body about">
-								<div class="about">
-									
-									  <div class="about-inner">
-									   
-									      <img src="images/b1.jpg" alt="about"/>
-										     <h4 class="tittle">Mercantil Bank in 95 Years</h4>
-										   <p>Mercantil Bank in its 95 is well on its way to completing the century being the best bank in Venezuela and one of the best in Latin America and the world. Right now Mercantil Bank leveraged on the experience of banks such as Shensei Bank and Bank of America is transforming its entire infrastructure and platform to direct its services to a fully digital experience, having artificial intelligence as its main challenge.</p>
+				<div class="col-md-6 news-text">
+					<h3> <a href="#" data-toggle="modal" data-target="#myModal1">MERCANTIL IN 95 YEARS</a></h3>
+					<ul class="news">
+						<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+						<!--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
+						<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+					</ul>
+					<p>Mercantil Bank in its 95 is well on its way to completing the century being the best bank in
+						Venezuela and one of the best in Latin America and the world. Right now Mercantil Bank
+						leveraged...</p>
+					<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read
+						More</a>
 
-										    <p>Through teams of development methodologies, they have injected a great fuel in accelerating processes to achieve these goals.. </p>
-									  </div>
-												
-								</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="news-grid">
+
+				<div class="col-md-6 news-text two">
+					<h3> <a href="#" data-toggle="modal" data-target="#myModal2">HONEYPOT: VUEJS</a></h3>
+					<ul class="news">
+						<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+						<!--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
+						<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+					</ul>
+					<p>Honeypot a YouTube channel has completely caught my attention, and is that his documentaries are
+						focused mainly on the world of Software development. And what most impressed me is the quality
+						of them, being at the level of any National Geographic documentary :-)
+					</p>
+					<a href="#" data-toggle="modal" data-target="#myModal2" class="read hvr-shutter-in-horizontal">Read
+						More</a>
+
+				</div>
+				<div class="col-md-6 news-img two">
+					<a href="#" data-toggle="modal" data-target="#myModal2"> <img src="images/b2.jpg" alt=" "
+							class="img-responsive"></a>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="news-grid">
+				<div class="col-md-6 news-img">
+					<a href="#" data-toggle="modal" data-target="#myModal3"> <img src="images/b3.jpg" alt=" "
+							class="img-responsive"></a>
+
+				</div>
+				<div class="col-md-6 news-text">
+					<h3> <a href="#" data-toggle="modal" data-target="#myModal3">LARACON EU: 2019</a></h3>
+					<ul class="news">
+						<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+						<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+						<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+						<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+					</ul>
+					<p>Laracon is the international official conference on Laravel. It is a place where developers and
+						Laravel enthusiasts come around to discuss and learn more about Laravel. It mainly deals with
+						topics like Laravel framework, development, its uses and other software development news. It is
+						not just limited to Laravel. It is a conference for discussing general software development. .
+					</p>
+					<a href="#" data-toggle="modal" data-target="#myModal3" class="read hvr-shutter-in-horizontal">Read
+						More</a>
+
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- top-grids -->
+	<!-- /blog-pop-->
+	<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog about" role="document">
+			<div class="modal-content about">
+				<div class="modal-header">
+					<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body about">
+					<div class="about">
+
+						<div class="about-inner">
+
+							<img src="images/b1.jpg" alt="about" />
+							<h4 class="tittle">Mercantil Bank in 95 Years</h4>
+							<p>Mercantil Bank in its 95 is well on its way to completing the century being the best bank
+								in Venezuela and one of the best in Latin America and the world. Right now Mercantil
+								Bank leveraged on the experience of banks such as Shensei Bank and Bank of America is
+								transforming its entire infrastructure and platform to direct its services to a fully
+								digital experience, having artificial intelligence as its main challenge.</p>
+
+							<p>Through teams of development methodologies, they have injected a great fuel in
+								accelerating processes to achieve these goals.. </p>
 						</div>
+
 					</div>
 				</div>
 			</div>
-			<!-- //blog-pop-->
-				<!-- /blog-pop-->
-				<div class="modal ab fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="modal-dialog about" role="document">
-						<div class="modal-content about">
-							<div class="modal-header">
-								<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-							</div>
-							<div class="modal-body about">
-									<div class="about">
-										
-										  <div class="about-inner">
-										   
-											  <img src="images/b2.jpg" alt="about" width="570" height="370"/>
-												 <h4 class="tittle">HONEYPOT: VUEJS</h4>
-											   <p>Honeypot a YouTube channel has completely caught my attention, and is that his documentaries are focused mainly on the world of Software development. And what most impressed me is the quality of them, being at the level of any National Geographic documentary :-)</p>
+		</div>
+	</div>
+	<!-- //blog-pop-->
+	<!-- /blog-pop-->
+	<div class="modal ab fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog about" role="document">
+			<div class="modal-content about">
+				<div class="modal-header">
+					<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body about">
+					<div class="about">
 
-											   <p>Here is one of his documentaries that I really enjoyed, is the Vue documentary: Where you can see interviews with professionals like Evan You and Taylor Otwell
-												
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/OrxmtDw4pVI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="VueJS Documentary"></iframe>
-				
-												</p>
-										  </div>
-													
-									</div>
-							</div>
+						<div class="about-inner">
+
+							<img src="images/b2.jpg" alt="about" width="570" height="370" />
+							<h4 class="tittle">HONEYPOT: VUEJS</h4>
+							<p>Honeypot a YouTube channel has completely caught my attention, and is that his
+								documentaries are focused mainly on the world of Software development. And what most
+								impressed me is the quality of them, being at the level of any National Geographic
+								documentary :-)</p>
+
+							<p>Here is one of his documentaries that I really enjoyed, is the Vue documentary: Where you
+								can see interviews with professionals like Evan You and Taylor Otwell
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/OrxmtDw4pVI"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen title="VueJS Documentary"></iframe>
+
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //blog-pop-->
+	<!-- /blog-pop-->
+	<div class="modal ab fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog about" role="document">
+			<div class="modal-content about">
+				<div class="modal-header">
+					<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body about">
+					<div class="about">
+
+						<div class="about-inner">
+
+							<img src="images/b3.jpg" alt="about" width="570" height="370" />
+							<h4 class="tittle">LARACON EU: 2019</h4>
+							<p>Laracon is the international official conference on Laravel. It is a place where
+								developers and Laravel enthusiasts come around to discuss and learn more about Laravel.
+								It mainly deals with topics like Laravel framework, development, its uses and other
+								software development news. It is not just limited to Laravel. It is a conference for
+								discussing general software development. It is mostly held in the US and EU. There is
+								Laracon EU for the conferences conducted in Europe.</p>
+
+							<p>Laracon is the representation of the huge Laravel community. It is also a great
+								opportunity for budding Laravel developers. Not just developers but people enthusiastic
+								about Laravel and software technology, in general, can immensely benefit from this
+								international conference. Prominent leaders in this field come together and their
+								insights leave a huge impact. Tyler Otwell’s introductory speech is often looked forward
+								to.</p>
+
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Hfgcg09srSo"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen title="laracon 2019"></iframe>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //blog-pop-->
+
+	<!-- /header -->
+	<div class="footer" id="contact">
+		<div class="container">
+			<div class="service-head one text-center">
+				<h4>CONTACT ME</h4>
+				<h3>GET <span>IN TOUCH WITH ME</span></h3>
+				<span class="border two"></span>
+			</div>
+			<div class="mail_us">
+				<div class="col-md-6 mail_left">
+					<div class="contact-grid1-left">
+						<div class="contact-grid1-left1">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+							<h4>Contact By Email</h4>
+							<ul>
+								<li>Main Mail: <a href="mailto:serranol82@gmail.com">serranol82@gmail.com</a></li>
+								<li>Secondary Mail: <a href="mailto:lserranoipc@gmail.com">lserranoipc@gmail.com</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-				</div>
-				<!-- //blog-pop-->
-				<!-- /blog-pop-->
-				<div class="modal ab fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="modal-dialog about" role="document">
-						<div class="modal-content about">
-							<div class="modal-header">
-								<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-							</div>
-							<div class="modal-body about">
-									<div class="about">
-										
-										  <div class="about-inner">
-										   
-											  <img src="images/b3.jpg" alt="about" width="570" height="370"/>
-												 <h4 class="tittle">LARACON EU: 2019</h4>
-											   <p>Laracon is the international official conference on Laravel. It is a place where developers and Laravel enthusiasts come around to discuss and learn more about Laravel. It mainly deals with topics like Laravel framework, development, its uses and other software development news. It is not just limited to Laravel. It is a conference for discussing general software development. It is mostly held in the US and EU. There is Laracon EU for the conferences conducted in Europe.</p>
-
-											   <p>Laracon is the representation of the huge Laravel community. It is also a great opportunity for budding Laravel developers. Not just developers but people enthusiastic about Laravel and software technology, in general, can immensely benefit from this international conference. Prominent leaders in this field come together and their insights leave a huge impact. Tyler Otwell’s introductory speech is often looked forward to.</p>
-												
-											   <iframe width="560" height="315" src="https://www.youtube.com/embed/Hfgcg09srSo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="laracon 2019"></iframe>
-				
-												
-										  </div>
-													
-									</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- //blog-pop-->	
-
-			<!-- /header -->
-<div class="footer" id="contact">
-	<div class="container">
-	<div class="service-head one text-center">
-						<h4>CONTACT ME</h4>
-						<h3>GET <span>IN TOUCH WITH ME</span></h3>
-						<span class="border two"></span>
-					</div>
-		<div class="mail_us">
-			<div class="col-md-6 mail_left">
-				<div class="contact-grid1-left">
-					<div class="contact-grid1-left1">
-						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<h4>Contact By Email</h4>
-						<ul>
-							<li>Main Mail: <a href="mailto:serranol82@gmail.com">serranol82@gmail.com</a></li>
-							<li>Secondary Mail: <a href="mailto:lserranoipc@gmail.com">lserranoipc@gmail.com</a></li>
-						</ul>
-					</div>
-				</div>
 					<div class="contact-grid1-left">
 						<div class="contact-grid1-left1">
 							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
@@ -797,233 +884,271 @@
 							</ul>
 						</div>
 					</div>
-				<div class="clearfix"> </div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 mail_right">
+					<form action="#" method="post">
+						<input type="text" name="Name" value="Under Construccion" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Name';}" required=""
+							placeholder="Under Construction">
+						<input type="email" name="Email" value="Email" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+						<textarea name="Message..." onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Under Costruction';}"
+							required="">Under Construction</textarea>
+						<input type="submit" value="Send">
+
+					</form>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="col-md-6 mail_right">
-				<form action="#" method="post">
-					<input type="text" name="Name" value="Under Construccion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="" placeholder="Under Construction">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-					<textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Under Costruction';}" required="">Under Construction</textarea>
-					<input type="submit" value="Send">
-					
-				</form>
+			<div class="copy_right text-center">
+				<p>&copy; 2020 Copyright . All rights reserved</a></p>
+				<ul class="social-icons two">
+					<li><a href="https://twitter.com/lserranoipc" target="_blank" rel="noopener noreferrer"> </a></li>
+					<li><a href="https://www.facebook.com/luisalfredo.serranodiaz" class="fb" target="_blank"
+							rel="noopener noreferrer"> </a></li>
+					<li><a href="#" class="in"> </a></li>
+					<li><a href="#" class="dott"> </a></li>
+				</ul>
 			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="copy_right text-center">
-			<p>&copy; 2020 Copyright . All rights reserved</a></p>
-			 <ul class="social-icons two">
-							<li><a href="https://twitter.com/lserranoipc" target="_blank" rel="noopener noreferrer"> </a></li>
-							<li><a href="https://www.facebook.com/luisalfredo.serranodiaz" class="fb" target="_blank" rel="noopener noreferrer"> </a></li>
-							<li><a href="#" class="in"> </a></li>
-							<li><a href="#" class="dott"> </a></li>
-						</ul>
 		</div>
 	</div>
-</div>
-			<!-- //footer -->
-		<!-- /container -->
-		<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3></h3>
-                        <img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Email Marketing</h3>
-                        <img src="images/email1.jpg" class="img-responsive img-centered" alt="">
-                        <p>As general manager of an email marketing platform I knew the entire ecosystem that is needed to be able to have satisfactory mass mailing, achieving parameterization of servers and systems with a reputation of 99% with Gmail, Hotmail, Yahoo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3></h3>
-                        <img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Server Admin</h3>
-                        <img src="images/servers.jpg" class="img-responsive img-centered" alt="">
-                        <p>Experience in managing servers in different operating systems, such as Windows Server and GNU / Linux. With physical teams like IBM and in the cloud like OVH, Hetzner and Contabo. a) https://www.ovh.com/ca/en/ b) https://www.hetzner.com/ c) https://contabo.com/</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Scripts Development</h3>
-                        <img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
-                        <p>The nature of these scripts is completely confidential, as it is the core of the business for email marketing companies and therefore I cannot publish it. However for the development of the same the required standards are used, widely using the standard psr-2, and psr-4 for autoload of our classes. The code of the backed developed by me its Oriented Object Programming. Used for our Web development. But the website in the test server can be accessed through https://www.radarsystems.net</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Development Documentation</h3>
-                        <img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
-                        <p>Software development does not only cover the coding of the system, but also the construction of the system based on the use cases required by the developer. Knowledge of the Axure Tool for the construction of Use Cases.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Agile Methodologies</h3>
-                        <img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
-                        <p>For the construction of a system, a framework must be created that allows monitoring of all the tasks involved in their development. For this, agile working methodologies are used. With Frameworks like Scrum supported by Design Thinking and Visual Thinking.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3></h3>
-                        <img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 100;"> </span></a>
+	<!-- //footer -->
+	<!-- /container -->
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3></h3>
+							<img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Email Marketing</h3>
+							<img src="images/email1.jpg" class="img-responsive img-centered" alt="">
+							<p>As general manager of an email marketing platform I knew the entire ecosystem that is
+								needed to be able to have satisfactory mass mailing, achieving parameterization of
+								servers and systems with a reputation of 99% with Gmail, Hotmail, Yahoo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3></h3>
+							<img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Server Admin</h3>
+							<img src="images/servers.jpg" class="img-responsive img-centered" alt="">
+							<p>Experience in managing servers in different operating systems, such as Windows Server and
+								GNU / Linux. With physical teams like IBM and in the cloud like OVH, Hetzner and
+								Contabo. a) https://www.ovh.com/ca/en/ b) https://www.hetzner.com/ c)
+								https://contabo.com/</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Scripts Development</h3>
+							<img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
+							<p>The nature of these scripts is completely confidential, as it is the core of the business
+								for email marketing companies and therefore I cannot publish it. However for the
+								development of the same the required standards are used, widely using the standard
+								psr-2, and psr-4 for autoload of our classes. The code of the backed developed by me its
+								Oriented Object Programming. Used for our Web development. But the website in the test
+								server can be accessed through https://www.radarsystems.net</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Development Documentation</h3>
+							<img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
+							<p>Software development does not only cover the coding of the system, but also the
+								construction of the system based on the use cases required by the developer. Knowledge
+								of the Axure Tool for the construction of Use Cases.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Agile Methodologies</h3>
+							<img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
+							<p>For the construction of a system, a framework must be created that allows monitoring of
+								all the tasks involved in their development. For this, agile working methodologies are
+								used. With Frameworks like Scrum supported by Design Thinking and Visual Thinking.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h3>Banking IT</h3>
+							<img src="images/mercan.jpg" class="img-responsive img-centered" alt="">
+							<p>Actively participating in the digital transformation of Banco Mercantil in the
+								development of applications with agile frameworks (SCRUM).<br>
+
+								Developing multi-currency products for the Bank's clients.<br>
+
+								- Desktop applications for transfers, affiliation to services.<br>
+								- Mobile applications to make payments and transfers, affiliation to services.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 100;"> </span></a>
 	<!--start-smooth-scrolling-->
-						<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-								<!--end-smooth-scrolling-->
-<!-- //for bootstrap working -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!--end-smooth-scrolling-->
+	<!-- //for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
-	
+	<!-- development version, includes helpful console warnings -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/app.js"></script>
 
-	</body>
+</body>
+
 </html>
-
